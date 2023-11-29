@@ -42,3 +42,48 @@ function toggleAccordion() {
 }
 
 title.forEach(question => question.addEventListener('click', toggleAccordion));
+
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  slidesPerView: 7,
+  loop: true,
+  speed:800,
+  spaceBetween: 100,
+  observer: true,
+  autoHeight: false,
+  autoplay: {
+    delay: 2000,
+  },
+
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+        320: {
+          slidesPerView: 3,
+          spaceBetween:20,
+      },
+        460: {
+          slidesPerView: 5,
+          spaceBetween:20,
+      },
+      500: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+          
+      },
+      768: {
+          slidesPerView: 6,
+          spaceBetween: 20,
+      },
+      998: {
+          slidesPerView: 7,
+          spaceBetween: 20,
+      },
+     
+  },
+  
+
+});
