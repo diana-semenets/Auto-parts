@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/spare-parts.ico" type="image/x-icon">
     <meta name="description" content="Широкий вибір автозапчастин та масел в Полтаві">
-    <title>Запчастини</title>
+    <meta name="keywords" content="запчастини, автозапчастини, підбір">
+    <title>Інтернет-магазин автозапчастин</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">           
             <div class="header__box">		                		
-                <div class="header__logo"><a href="index.html"><img src="../img/spare-parts.png" alt="логотип"></a></div>	
+                <div class="header__logo"><a href="index.html"><img src="../img/spare-parts.png" alt="Підбір запчастин"></a></div>	
                 <div class="header__menu">
                     <div class="header-burger">
                         <div class="menu-btn">
@@ -25,19 +26,19 @@
                     <nav class="header__nav menu">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="index.html" class="menu__link active-menu ">Каталог</a>                                
+                                <a href="#catalogs" class="menu__link active-menu ">Каталог</a>                                
                             </li>
-                            <li class="menu__item  serv"><a href="index.html#services" class="menu__link">Підбір запчастин</a>
+                            <li class="menu__item  serv"><a href="#selection" class="menu__link">Підбір запчастин</a>
                                 
                             </li>
-                            <li class="menu__item"><a href="index.html#blog" class="menu__link">Новини</a></li>							
+                            <li class="menu__item"><a href="#blog" class="menu__link">Новини</a></li>							
                             
-                            <li class="menu__item"><a href="#" class="menu__link">Доставка і оплата</a></li>
+                            <li class="menu__item"><a href="#pay" class="menu__link">Доставка і оплата</a></li>
                             <!---<li class="menu__item"><a href="index.html#reviews" class="menu__link">Відгуки</a></li> -->
                         </ul>
                     </nav>
                 </div>						
-                 <button class="header__btn btn">Підібрати</button>                
+                 <a href="#selection" class="header__btn btn">Підібрати</a>                
             </div>
         </header>
 
@@ -52,21 +53,21 @@
                             </h2>          
                         </div> 
                         <div class="title__img">
-                            <img width="700" height='687' src="img/pngwing.webp" alt="інтернет-магазин автозапчастин">
+                            <img width="700" height='687' src="img/pngwing.webp" alt="інтернет-магазин запчастин">
                         </div>
                     </div>
                     
 
                 </section>
                 
-                <section class="catalogs">
+                <section class="catalogs" id="catalogs">
                     <div class="catalogs__container">
                         <h3 class="catalogs__title title">Популярний асортимент</h3>
                         
                             <div class="catalogs__items">
                                 <article class="catalogs__item">
                                     <div class="catalogs__item-img"><img src="img/pngwing.com.webp" alt="купити моторні масла"></div>                                
-                                    <h4>Масла моторні, трансмісійні</h4>                                
+                                    <h4>Оливи моторні, трансмісійні</h4>                                
                                 </article>
                                 <article class="catalogs__item">
                                     <div class="catalogs__item-img"><img src="img/filters.webp" alt="купити фільтра масляні"></div>                                
@@ -89,7 +90,7 @@
                         
                     </div>
                 </section>
-                <section class="selection">
+                <section class="selection" id="selection">
                     <div class="selection__container">
                         <h3 class="selection__title title">Підбір автозапчастин по він коду</h3>
                         <div class="selection__about">
@@ -102,16 +103,16 @@
                             <div class="selection__about-img">
                                 <h4 class="selection__about-title">Залишити заявку на підбір автозапчастин</h4>
                                 <form action="#" class="selection__form">
-                                    <input type="text" name="" placeholder="VIN-код">
-                                    <input type="text" name="" placeholder="Потрібна запчастина">
-                                    <input type="text" name="" placeholder="Ваш email">
+                                    <input required type="text" name="" placeholder="VIN-код" maxlength="20">
+                                    <input required type="text" name="" placeholder="Потрібна запчастина">
+                                    <input required type="email" name="email" placeholder="Ваш email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                                     <input  value="Відправити" type="submit">
                                 </form>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="blog">
+                <section class="blog" id="blog">
                     <div class="blog__container">
                         <div class="blog__navigation">
                             <h3 class="blog__title title">Новини</h3>
@@ -203,15 +204,15 @@
                     <div class="swiper" >                        
                        <div class="swiper-wrapper">                           
                            <div class="swiper-slide brand-slide">
-                               <div class="brand-slide_img"><img class="slider-img" src="img/logos/abe.png" alt="купити abe"></div>
+                               <div class="brand-slide_img"><img class="slider-img" src="img/logos/abe.webp" alt="купити abe"></div>
                            </div>
                            <div class="swiper-slide brand-slide">
                                <div class="brand-slide_img">
-                                   <img src="img/logos/bosch.png" alt="">
+                                   <img src="img/logos/bosch.webp" alt="купити бош в Полтаві">
                                </div>
                            </div>
                            <div class="swiper-slide brand-slide">
-                               <div class="brand-slide_img"><img src="img/logos/denso.png" alt="купити denso"></div>
+                               <div class="brand-slide_img"><img src="img/logos/denso.webp" alt="купити denso"></div>
                            </div>
                            <div class="swiper-slide brand-slide">
                                <div class="brand-slide_img"><img src="img/logos/ferodo.png" alt="купити ferodo"></div>
@@ -245,7 +246,7 @@
                                  
                    </div>
                 </section>
-                <section class="pay">
+                <section class="pay" id="pay">
                     <div class="pay__container">                        
                         <div class="pay__content">
                             <div class="pay__info">
@@ -269,8 +270,8 @@
                                 <h4 class="pay__ship-title">Залишились питання?</h4>
                                 <form action="#" class="pay__form">
                                     <input type="text" name="" placeholder="Ваше імя">
-                                    <input type="tel" name="" placeholder="Ваш телефон">
-                                    <input type="text" name="" placeholder="Ваш email">
+                                    <input type="tel" name="" placeholder="Ваш телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" requiredpattern>
+                                    <input type="email" name="" placeholder="Ваш email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                                     <input  value="Відправити" type="submit">
                                 </form>
                             </div>
@@ -284,14 +285,13 @@
             <div class="footer__container">
 				<div class="footer__content">
 					<div class="footer__logo">
-						<div class="footer__logo"><img src="img/spare-parts.png" alt="логотип"></div>
-						
+						<div class="footer__logo"><img src="img/spare-parts.png" alt="логотип"></div>						
 					</div>
 					<ul class="footer-menu__list">
 						<li class="menu__item"><a href="index.html#services" class="menu__link">Каталог</a></li>
-						<li class="menu__item"><a href="index.html#benefits" class="menu__link">Підбір запчастин</a></li>
-						<li class="menu__item"><a href="index.html#gallery" class="menu__link">Новини</a></li>
-						<li class="menu__item"><a href="index.html#contacts" class="menu__link">Доставка і оплата</a></li>
+						<li class="menu__item"><a href="#selection" class="menu__link">Підбір запчастин</a></li>
+						<li class="menu__item"><a href="#blog" class="menu__link">Новини</a></li>
+						<li class="menu__item"><a href="#pay" class="menu__link">Доставка і оплата</a></li>
 					</ul>
 					<ul class="footer-menu__list">
                         <li class="menu__item"><a href="index.html#services" class="menu__link">Масла моторні, трансмісійні</a></li>
